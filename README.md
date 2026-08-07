@@ -20,8 +20,9 @@
 </p>
 
 <p align="center">
-  <a href="#overview">Overview</a> &bull;
-  <a href="#compatibility">Compatibility</a> &bull;
+  <a href="#what-it-does">What it does</a> &bull;
+  <a href="#how-to-use">How to use</a> &bull;
+  <a href="#commands-and-permissions">Commands</a> &bull;
   <a href="#install">Install</a> &bull;
   <a href="https://github.com/TheNINJALLO/endstone-qol/releases">Releases</a>
 </p>
@@ -30,11 +31,26 @@
 
 A Quality of Life plugin for Endstone BDS. This release is aligned with Endstone 0.11.8 and Minecraft Bedrock Dedicated Server 1.26.40, and is distributed as a Python wheel for direct installation in an Endstone server.
 
-## Capabilities
+## What it does
 
-- Focused quality-of-life improvements for Bedrock servers
-- Endstone-native command and event integration
-- Lightweight wheel deployment
+- Adds opt-in entity radar, TPS monitoring, and a WAILA-style block HUD.
+- Calculates linked Overworld/Nether portal coordinates through an in-game form.
+- Lets administrators enable or disable each module in the generated configuration.
+
+## How to use
+
+1. Start once and enable only the QoL modules wanted on the server.
+2. Players toggle their own HUD features with `/radar`, `/tpsmonitor`, and `/waila`.
+3. Run `/portal` to open the coordinate calculator; this command does not create portals.
+
+## Commands and permissions
+
+| Command / usage | What it does | Access |
+|---|---|---|
+| `/radar` | Toggle Entity Radar | All players |
+| `/tpsmonitor` | Toggle TPS Monitor | All players |
+| `/portal` | Calculate Portal Coordinates | All players |
+| `/waila` | Toggle WAILA HUD | All players |
 
 ## Compatibility
 
